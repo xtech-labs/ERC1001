@@ -10,3 +10,12 @@ A hyper-secure technical standard represents a groundbreaking fusion, empowering
 
 ## X Name Service
 XNS is a domain naming system that provides domain registration services to create a readable domain and leads to a certain wallet address.
+
+# Social Links
+[![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=internet-explorer&logoColor=white)](https://x.tech)
+
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/uMSwamHZwg)
+
+[![Twitter](https://img.shields.io/badge/X-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/xtech_web3)
+
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/xtech_official)
