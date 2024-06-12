@@ -70,6 +70,10 @@ contract ERC1001Upgradeable is Initializable {
         return $.uri;
     }
 
+    function uri(uint256) public view virtual returns (string memory) {
+        return uri();
+    }
+
     function _setURI(string memory newuri) internal {
         ERC1001Storage storage $ = _getERC1001Storage();
         $.uri = newuri;
