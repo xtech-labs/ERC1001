@@ -11,7 +11,7 @@ contract ERC1001 {
     string public name;
     string public symbol;
     uint8 public decimals;
-    string public uri;
+    string public tokenUri;
 
     // events
     event Transfer(address indexed from, address indexed to, uint256 value);
@@ -25,11 +25,15 @@ contract ERC1001 {
         name = name_;
         symbol = symbol_;
         decimals = decimals_;
-        uri = uri_;
+        tokenUri = uri_;
     }
 
     function _setURI(string memory newuri) internal {
-        uri = newuri;
+        tokenUri = newuri;
+    }
+
+    function uri(uint256) public view virtual returns (string memory) {
+        return tokenUri;
     }
 
     function balanceOf(address account) public view virtual returns (uint256) {
