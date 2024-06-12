@@ -2,6 +2,25 @@
 
 ERC1001 developed by [x.tech](https://x.tech) that enhances security and identity based on core technology from ERC-20 along with Smart Contract platform from ERC-1155
 
+# Usage
+
+```solidity
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.20;
+
+import "./ERC1001.sol";
+
+contract MyTokenERC1001 is ERC1001 {
+    constructor() ERC1001("MyTokenERC1001", "MTK", 18, "https://metadata_url.com/{id}.json") {
+        // mint 1,000,000 token to the contract creator
+        _mint(msg.sender, 1000000 * 10 ** decimals);
+
+        // mint 1,000,000 NFTs to the contract creator tokenId = 1
+        _safeMint(msg.sender, 1, 1000000);
+    }
+}
+```
+
 ## What is ERC-1001?
 ERC-1001 is a hybrid technology between ERC20 and ERC1155 standards, fostering both enhanced liquidity and robust decentralization for Web3 Domains.
 
